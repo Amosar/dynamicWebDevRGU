@@ -1,0 +1,57 @@
+body {
+    margin:auto;
+    max-width:80% ;
+}
+
+header, section, article, nav, aside, footer, div {
+    font-family: sans-serif;
+    border: 1px dotted #000;
+    padding: 10px;
+    margin: 10px;
+}
+
+#SiteLogo {
+    height: 5em;
+    width: 5em;
+    float: left;
+    margin-right : 1em;
+}
+
+#SiteNavigation li,#SiteNavigation a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+#SiteNavigation li {
+    padding : 10px;
+    border: 1px dotted #000;
+}
+
+#PageContent {
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+}
+
+
+#PageContent section img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#right-elements{
+    flex-shrink: 3;
+    -webkit-flex-shrink: 3;
+}
+
+#image-comments ul{
+    padding: 0.1em;
+    overflow: hidden;
+}
+
+#image-comments li{
+    padding: 0.3em;
+    border: 1px dotted #000;
+
+}
