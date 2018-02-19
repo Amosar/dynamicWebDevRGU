@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Moggybook registration</title>
+    <script>
+        function testResults(form){
+            //simple script to pop-up form values after submission
+            //grab form element values and store as variables
+            var username = form.username.value;
+            var breed = form.breed.value;
+            var email = form.email.value;
+            var homepage = form.homepage.value;
+            var dateOfBirth = form.dateOfBirth.value;
+            var about = form.about.value;
+
+            alert ("You registered: "+username+"\n"
+                +"Your email is: "+email);
+        }
+    </script>
+</head>
+<body>
+    <h1>MoggyBook!</h1>
+    <!--complete the form-->
+
+    <form>
+        <table border="0" cellspacing="5" cellpadding="5">
+            <tr>
+                <td>Username:</td>
+                <td>
+                    <input type="text" name="username" title="username">
+                </td>
+            </tr>
+            <tr>
+                <td>Breed:</td>
+                <td>
+                    <input type="text" name="breed" title="breed">
+                </td>
+            </tr>
+            <tr>
+                <td>Email:</td>
+                <td>
+                    <input type="email" name="email" title="email">
+                </td>
+            </tr>
+            <tr>
+                <td>Homepage:</td>
+                <td>
+                    <input type="text" name="homepage" title="homepage">
+                </td>
+            </tr>
+            <tr>
+                <td>Date of birth:</td>
+                <td>
+                    <input type="date" name="dateOfBirth" title="dateOfBirth">
+                </td>
+            </tr>
+            <tr>
+                <td>About:</td>
+                <td>
+                    <input type="text" name="about" title="about">
+                </td>
+            </tr>
+        </table>
+        <input type="submit" name="submit" value="Submit" onclick="testResults(this.form)" />
+</body>
+</html>
